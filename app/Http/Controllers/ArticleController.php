@@ -5,6 +5,16 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use Illuminate\Http\Request;
 
+/**
+ * @OA\Get(
+ *   tags={"test"},
+ *   path="/api/",
+ *   summary="test route",
+ *   @OA\Response(response=200, description="OK"),
+ *   @OA\Response(response=404, description="Not Found")
+ * )
+ */
+
 class ArticleController extends Controller
 {
     /**
